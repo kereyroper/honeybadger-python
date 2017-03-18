@@ -5,7 +5,7 @@ When any uncaught exceptions occur, Honeybadger will send the data off to the Ho
 
 ## Supported Versions
 
-Tested with Django 1.9 and Python 2.7 through 3.5. Django integration is done via middleware so it should work with almost any version.
+Tested with Django 1.10 and Python 2.7.
 
 ## Getting Started
 
@@ -20,10 +20,10 @@ Install honeybadger with pip.
 
 ### Django
 
-In a Django application, add the Honeybadger Django middleware to *the top* of your `MIDDLEWARE_CLASSES` config variable:
+In a Django application, add the Honeybadger Django middleware to *the top* of your `MIDDLEWARE` config variable:
 
 ```python
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = (
   'honeybadger.middleware.DjangoHoneybadgerMiddleware',
   ...
 )
