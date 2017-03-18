@@ -22,8 +22,3 @@ class DjangoHoneybadgerMiddleware(object):
         honeybadger.reset_context()
         return response
 
-# TODO: finish Flask support
-class FlaskHoneybadgerMiddleware(object):
-    def __init__(self, app, **kwargs):
-        raise NotImplemented
-        # return app
